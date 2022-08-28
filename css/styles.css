@@ -42,7 +42,7 @@ body{
 
 
 }
-section{
+.section{
     padding-top: 94px;
     padding-bottom: 94px;
 
@@ -62,6 +62,12 @@ section{
        width: 1200px;
        margin: auto;
        padding: 0 15px;
+   }
+
+   .img{
+    display: block;
+    max-width: 100%;
+    height: auto;
    }
 /* =========
 Header
@@ -108,26 +114,14 @@ Header
     gap: 50px;
     margin-left: 93px;
  }
-.site-nav{
-    
-
-}
-.site-nav .item{
-   outline: 1px solid red;
-
-}
-
-
 .main-nav .link {
         display: block;
         padding-top: 32px;
         padding-bottom: 32px;
 
-        
         font-weight: 500;
         line-height: 1.14;
         letter-spacing: 0.02em;
-        text-decoration: none;
         color: var(--main-txt-cl);
 }
 
@@ -136,7 +130,7 @@ Header
 .link .link-active:active{
     color: var(--accent-txt-cl);
 }
-.link .link-active{
+.site-nav-item .link-active{
     color: var(--accent-txt-cl);
 }
 
@@ -194,7 +188,7 @@ Header
         text-transform: uppercase;
         color: var(--light-txt-cl);
 
-        padding-bottom: 30px;
+        margin-bottom: 30px;
         width: 696px;
 }
 .hero-button{
@@ -244,12 +238,11 @@ Header
 .feat-tittle{
         font-family: 'Roboto';
         font-weight: 700;
-        
+        font-size: 14px;
         line-height: 1.14;
-        letter-spacing: 0.03em;
         text-transform: uppercase;
         color: var(--main-txt-cl);
-        padding-bottom: 10px;
+        margin-bottom: 10px;
 }
 
 .feat-text{
@@ -301,10 +294,13 @@ Header
 }
 
 .team-card{
-            background-color: var(--main-bcg-cl);
-            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-                border-radius: 0px 0px 4px 4px;
-            }
+    background: #FFFFFF;
+        /* material shadow v1 */
+    
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+        padding: 30px 0;
+}
 
 .teammate{
         font-weight: 500;
@@ -314,7 +310,7 @@ Header
     
         text-align: center;
         color: var(--main-txt-cl);
-        padding-top: 30px;
+
 }
 .team-position{
         font-size: 16px;
@@ -323,9 +319,7 @@ Header
     
         text-align: center;
         color: var(--grey-txt-cl);
-        padding-top: 10px;
-        padding-bottom: 30px;
-
+        margin-top: 10px;
     }
 
 
@@ -341,8 +335,8 @@ Header
         line-height: 1.19;
         /* identical to box height */
         text-decoration: none;
-        padding-top: 60px;
-        padding-bottom: 20px;
+      
+       margin-bottom: 20px;
         background-color: var(--secondary-bgc-cl);
 }
 .logo-blue{
@@ -360,17 +354,25 @@ Header
         color: var(--grey-txt-cl);
 
         display: block;
-        padding-bottom: 9px;
+        /* padding-bottom: 9px; */
         
 }
+.street-address{
+    color: inherit;
+}
+
 .footer .address{
             font-style: normal;
             line-height: 1.71;
             /* or 171% */
             color: var(--light-txt-cl);
 
-            padding-bottom: 60px;
+            /* padding-bottom: 60px; */
         }
+.footer-item:not(:last-child){
+    margin-bottom: 9px;
+
+}
 
         /* Portfolio */
 
@@ -399,6 +401,9 @@ color: var(--light-txt-cl);}
         border: 0;
         border-radius: 4px;
 }
+.filter-button{
+    padding: 6px 22px;
+}
 
 .card-tittle {
     font-family: 'Roboto';
@@ -407,7 +412,7 @@ color: var(--light-txt-cl);}
     line-height: 2.1;
     letter-spacing: 0.06em;
     color: var(--main-txt-cl);
-    padding-top: 20px;
+    /* padding-top: 20px; */
 }
 
 .card-text {
@@ -437,7 +442,5 @@ color: var(--light-txt-cl);}
     border: 1px solid #eeeeee;
     border-top: 0;
     background-repeat: 0;
-    padding-right: 24px;
-    padding-left: 24px;
-    padding-bottom: 20px;
+    padding: 20px 24px;
 }
