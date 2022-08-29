@@ -267,6 +267,9 @@ Header
     gap: 30px
 ;
 }
+.work{
+    padding-top: 0;
+}
 
 
 /* Team */
@@ -326,6 +329,8 @@ Header
 
 /* Footer */
 .footer {background-color: var(--secondary-bgc-cl);
+        padding-top: 60px;
+        padding-bottom: 60px;
  }
 
 .footer-logo{
@@ -366,8 +371,6 @@ Header
             line-height: 1.71;
             /* or 171% */
             color: var(--light-txt-cl);
-
-            /* padding-bottom: 60px; */
         }
 .footer-item:not(:last-child){
     margin-bottom: 9px;
@@ -412,6 +415,8 @@ color: var(--light-txt-cl);}
     line-height: 2.1;
     letter-spacing: 0.06em;
     color: var(--main-txt-cl);
+
+    margin-bottom: 4px;
     /* padding-top: 20px; */
 }
 
